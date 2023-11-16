@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('register', function () {
+Route::post('register', function () {
 
     return view('register');
 

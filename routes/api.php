@@ -18,6 +18,6 @@ use App\Http\Controllers\API\UserController;
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
-Route::group(['middleware' => 'api'], function () {
+Route::group(['middleware' => 'api'], function ($routes) {
     Route::post('/register',[UserController::class, 'register']);
 });
